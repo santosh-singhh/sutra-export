@@ -13,11 +13,11 @@
         :root {
             --bg-main: #FAFAFA;
             --bg-card: #FFFFFF;
-            --primary: #0F172A;       
-            --primary-light: #1E293B; 
-            --accent: #C5A880;        
-            --text-dark: #334155;     
-            --text-light: #64748B;    
+            --primary: #0F172A;       /* Midnight Slate */
+            --primary-light: #1E293B; /* Lighter Slate */
+            --accent: #C5A880;        /* Champagne Gold */
+            --text-dark: #334155;     /* Slate 700 */
+            --text-light: #64748B;    /* Slate 500 */
             --border-soft: rgba(15, 23, 42, 0.08);
             --whatsapp: #25D366;
             --transition-slow: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -37,7 +37,10 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        h1, h2, h3, h4, .logo a { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
+        h1, h2, h3, h4, .logo a {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+        }
         h2, h3, h4 { color: var(--primary); }
 
         .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
@@ -45,51 +48,135 @@
         .text-center { text-align: center; }
         .mt-1 { margin-top: 1.5rem; }
 
-        .announcement-bar { background: var(--primary); color: var(--accent); text-align: center; padding: 12px 0; font-size: 0.8rem; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; }
-        .main-header { background: rgba(250, 250, 250, 0.95); padding: 1.2rem 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-soft); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+        /* Sleek Announcement Bar */
+        .announcement-bar {
+            background: var(--primary);
+            color: var(--accent);
+            text-align: center;
+            padding: 12px 0;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Glassmorphism Header */
+        .main-header {
+            background: rgba(250, 250, 250, 0.95);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-soft);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
         .nav-container { display: flex; justify-content: space-between; align-items: center; }
         .logo a { text-decoration: none; font-size: 1.8rem; letter-spacing: 1px; color: var(--primary); }
         .nav-links { display: flex; list-style: none; gap: 3rem; }
         .nav-links a { text-decoration: none; color: var(--primary-light); font-weight: 500; font-size: 0.9rem; transition: var(--transition-slow); position: relative; }
-        .nav-links a::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0; background-color: var(--accent); transition: var(--transition-slow); }
+        
+        .nav-links a::after {
+            content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0;
+            background-color: var(--accent); transition: var(--transition-slow);
+        }
         .nav-links a:hover::after { width: 100%; }
         .nav-links a:hover { color: var(--primary); }
+
         .mobile-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary); }
 
-        .btn { padding: 16px 32px; text-decoration: none; border-radius: 2px; display: inline-flex; align-items: center; justify-content: center; transition: var(--transition-slow); font-weight: 600; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; border: 1px solid transparent; gap: 10px; }
+        /* Elegant Buttons */
+        .btn {
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 2px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-slow);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: 1px solid transparent;
+            gap: 10px;
+        }
         .btn-primary { background: var(--accent); color: var(--primary); }
         .btn-primary:hover { background: #B3966D; transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+        
         .btn-outline { border-color: rgba(255,255,255,0.3); color: #FFF; background: transparent; backdrop-filter: blur(5px); }
         .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
+        
         .btn-whatsapp { background: var(--bg-main); border-color: var(--border-soft); color: var(--primary); width: 100%; }
         .btn-whatsapp:hover { background: var(--whatsapp); color: #FFF; border-color: var(--whatsapp); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2); }
 
+        /* Floating WhatsApp Icon */
         .floating-wa { position: fixed; bottom: 30px; right: 30px; background-color: var(--whatsapp); color: white; border-radius: 50px; padding: 14px 28px; display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3); z-index: 900; transition: var(--transition-slow); font-size: 0.9rem; border: none; cursor: pointer; }
         .floating-wa:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4); }
 
-        .hero { position: relative; padding: 10rem 2rem; min-height: 90vh; display: flex; align-items: center; background-image: linear-gradient(rgba(15, 23, 42, 0.80), rgba(15, 23, 42, 0.65)), url('https://images.unsplash.com/photo-1457089328109-e5d9f4306108?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed; color: #FFF; overflow: hidden; }
+        /* HERO SECTION */
+        .hero { 
+            position: relative;
+            padding: 10rem 2rem; 
+            min-height: 90vh; 
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(rgba(15, 23, 42, 0.80), rgba(15, 23, 42, 0.65)), url('https://images.unsplash.com/photo-1457089328109-e5d9f4306108?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #FFF;
+            overflow: hidden; 
+        }
         
-        .floating-raw-seed { position: absolute; width: 500px; height: 500px; top: 50%; left: 70%; transform: translate(-50%, -50%); opacity: 0.15; z-index: 1; pointer-events: none; animation: floatGently 8s ease-in-out infinite; }
-        @keyframes floatGently { 0% { transform: translate(-50%, -50%) rotate(0deg); } 50% { transform: translate(-50%, -55%) rotate(4deg); } 100% { transform: translate(-50%, -50%) rotate(0deg); } }
-        
+        .floating-raw-seed {
+            position: absolute;
+            width: 500px; 
+            height: 500px;
+            top: 50%;
+            left: 70%; 
+            transform: translate(-50%, -50%);
+            opacity: 0.15; 
+            z-index: 1; 
+            pointer-events: none; 
+            animation: floatGently 8s ease-in-out infinite;
+        }
+
+        @keyframes floatGently {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            50% { transform: translate(-50%, -55%) rotate(4deg); }
+            100% { transform: translate(-50%, -50%) rotate(0deg); }
+        }
+
         .hero-content { max-width: 800px; position: relative; z-index: 2; }
         .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: 3px; font-weight: 600; font-size: 0.85rem; display: block; margin-bottom: 1.5rem; }
         .hero h1 { font-size: 4.8rem; line-height: 1.05; margin-bottom: 2rem; color: #FFF; }
         .subheadline { font-size: 1.2rem; margin-bottom: 3rem; color: #E2E8F0; max-width: 90%; font-weight: 300; line-height: 1.8; }
         .hero-btns { display: flex; gap: 1.5rem; margin-bottom: 3rem; }
+        
         .trust-badges { display: flex; flex-wrap: wrap; gap: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; }
         .trust-badges span { font-size: 0.85rem; font-weight: 600; color: #E2E8F0; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; }
         .trust-badges span::before { content: ''; display: block; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
 
-        .pilot-dark-section { background-color: var(--primary); background-image: radial-gradient(circle at 50% 50%, var(--primary-light) 0%, var(--primary) 80%); color: #FFF; text-align: center; border-top: 2px solid var(--accent); }
-        .seed-showcase { position: relative; margin: 2rem auto 0; width: 280px; height: 280px; }
+        /* DARK THEMED PILOT SECTION */
+        .pilot-dark-section {
+            background-color: var(--primary);
+            background-image: radial-gradient(circle at 50% 50%, var(--primary-light) 0%, var(--primary) 80%);
+            color: #FFF;
+            text-align: center;
+            border-top: 2px solid var(--accent);
+        }
         
+        .seed-showcase { position: relative; margin: 2rem auto 0; width: 280px; height: 280px; }
         .bouncing-seed-img { width: 100%; height: 100%; position: relative; z-index: 2; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); animation: seedBounce 3s ease-in-out infinite; }
         .seed-shadow { position: absolute; bottom: -20px; left: 50%; width: 140px; height: 15px; background: rgba(0, 0, 0, 0.8); border-radius: 50%; filter: blur(8px); animation: shadowPulse 3s ease-in-out infinite; }
         
         @keyframes seedBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
         @keyframes shadowPulse { 0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.8; } 50% { transform: translateX(-50%) scale(0.6); opacity: 0.3; } }
 
+        /* SPEC CARDS */
         .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
         .spec-card { background: var(--bg-card); border: 1px solid var(--border-soft); border-radius: 8px; overflow: hidden; transition: var(--transition-slow); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; }
         .spec-card:hover { border-color: var(--accent); box-shadow: var(--shadow-premium); transform: translateY(-5px); }
@@ -108,9 +195,23 @@
         .packaging-banner h4 { color: var(--accent); font-size: 1.8rem; margin-bottom: 0.5rem; }
         .packaging-banner p { color: #cbd5e1; margin: 0; max-width: 600px; font-size: 1.05rem; font-weight: 300; text-align: left; }
 
+        /* MISC COMPONENTS */
         .img-container { border-radius: 4px; overflow: hidden; box-shadow: var(--shadow-premium); background: var(--bg-card); position: relative; }
         .img-container img { width: 100%; height: 100%; object-fit: cover; display: block; transition: var(--transition-slow); }
-        .product-placeholder { width: 100%; height: 320px; margin-bottom: 2rem; box-shadow: none; border-radius: 4px; }
+        
+        /* Updated Product Placeholder for SVGs */
+        .product-placeholder { 
+            width: 100%; 
+            height: 280px; 
+            margin-bottom: 2rem; 
+            border-radius: 4px; 
+            background: var(--primary); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        
         .quality-placeholder { width: 100%; height: 550px; }
         .section-header { text-align: center; margin-bottom: 5rem; max-width: 800px; margin-left: auto; margin-right: auto; }
         .section-header h2 { font-size: 3rem; margin-bottom: 1.5rem; }
@@ -129,7 +230,7 @@
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; }
         .product-card { background: var(--bg-main); padding: 2.5rem; border-radius: 4px; text-align: center; transition: var(--transition-slow); border: 1px solid transparent; }
         .product-card:hover { transform: translateY(-8px); background: var(--bg-card); box-shadow: var(--shadow-hover); border-color: var(--border-soft); }
-        .product-card:hover .img-container img { transform: scale(1.05); }
+        .product-card:hover .product-placeholder svg { transform: scale(1.1); transition: transform 0.5s ease; }
         .product-card h3 { font-size: 1.8rem; margin-bottom: 0.5rem; }
         .product-card p { color: var(--text-light); font-size: 1rem; font-weight: 300; margin-bottom: 2rem; min-height: 80px; }
         .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; }
@@ -423,30 +524,52 @@
                     <p>Available for raw commodity import, bulk ingredient sourcing, and retail-ready private labeling.</p>
                 </div>
                 <div class="product-grid">
+                    
                     <div class="product-card" style="text-align: center;">
-                        <div class="img-container product-placeholder">
-                            <img src="https://images.unsplash.com/photo-1515543904379-3d757afe72e3?q=80&w=800&auto=format&fit=crop" alt="Raw Bulk Fox Nuts in burlap sacks">
+                        <div class="product-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 45C30 30 70 30 70 45C75 60 75 80 65 85H35C25 80 25 60 30 45Z" fill="#1E293B" stroke="#C5A880" stroke-width="3"/>
+                                <path d="M40 35H60" stroke="#C5A880" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M35 25L40 35M50 22V35M65 25L60 35" stroke="#C5A880" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="45" cy="60" r="3" fill="#C5A880"/>
+                                <circle cx="55" cy="70" r="3" fill="#C5A880"/>
+                                <circle cx="58" cy="55" r="3" fill="#C5A880"/>
+                            </svg>
                         </div>
                         <h3>Raw Fox Nuts (Phool Makhana)</h3>
                         <p>Premium, machine-sorted unroasted Lotus Seeds. Ideal for European and US snack manufacturers seeking clean-label ingredients.</p>
                         <button class="btn btn-whatsapp mt-1 open-modal-btn">Inquire for Raw Bulk</button>
                     </div>
+                    
                     <div class="product-card" style="text-align: center;">
-                        <div class="img-container product-placeholder">
-                            <img src="https://images.unsplash.com/photo-1615485242250-9382f6e52277?q=80&w=800&auto=format&fit=crop" alt="Roasted and Seasoned Fox Nut Snacks">
+                        <div class="product-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 55C20 75 35 85 50 85C65 85 80 75 80 55H20Z" fill="#1E293B" stroke="#C5A880" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M40 40C45 35 45 25 40 20M50 45C55 40 55 30 50 25M60 40C65 35 65 25 60 20" stroke="#C5A880" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="35" cy="50" r="6" fill="#C5A880"/>
+                                <circle cx="50" cy="48" r="6" fill="#C5A880"/>
+                                <circle cx="65" cy="50" r="6" fill="#C5A880"/>
+                            </svg>
                         </div>
                         <h3>Roasted & Seasoned</h3>
                         <p>Pre-roasted in High Oleic oil and seasoned to your market's taste (e.g., Pink Salt, Sriracha). Shipped in bulk moisture-barrier liners.</p>
                         <button class="btn btn-whatsapp mt-1 open-modal-btn">Inquire for Flavored</button>
                     </div>
+                    
                     <div class="product-card" style="text-align: center;">
-                        <div class="img-container product-placeholder">
-                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop" alt="Private Label Packaging Mockup">
+                        <div class="product-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35 25H65C67.7614 25 70 27.2386 70 30V75C70 77.7614 67.7614 80 65 80H35C32.2386 80 30 77.7614 30 75V30C30 27.2386 32.2386 25 35 25Z" fill="#1E293B" stroke="#C5A880" stroke-width="3"/>
+                                <path d="M30 35H70" stroke="#C5A880" stroke-width="3"/>
+                                <rect x="40" y="45" width="20" height="25" rx="2" fill="#C5A880"/>
+                                <circle cx="50" cy="52" r="3" fill="#1E293B"/>
+                            </svg>
                         </div>
                         <h3>Private Label Packaging</h3>
                         <p>End-to-end processing and retail packaging. We pack into your custom branded pouches, ready for immediate supermarket distribution.</p>
                         <button class="btn btn-whatsapp mt-1 open-modal-btn">Discuss Private Label</button>
                     </div>
+                    
                 </div>
             </div>
         </section>
