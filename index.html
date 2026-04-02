@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sutra | Global Fox Nut (Makhana) Exporters</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-main: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --primary: #0F172A;       
+            --primary-light: #1E293B; 
+            --accent: #C5A880;        
+            --text-dark: #334155;     
+            --text-light: #64748B;    
+            --border-soft: rgba(15, 23, 42, 0.08);
+            --whatsapp: #25D366;
+            --transition-slow: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            --shadow-premium: 0 20px 40px rgba(15, 23, 42, 0.06);
+            --shadow-hover: 0 30px 60px rgba(15, 23, 42, 0.12);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, .logo a { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
+        h2, h3, h4 { color: var(--primary); }
+
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        .section { padding: 8rem 0; }
+        .text-center { text-align: center; }
+        .mt-1 { margin-top: 1.5rem; }
+
+        .announcement-bar { background: var(--primary); color: var(--accent); text-align: center; padding: 12px 0; font-size: 0.8rem; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; }
+        .main-header { background: rgba(250, 250, 250, 0.95); padding: 1.2rem 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-soft); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo a { text-decoration: none; font-size: 1.8rem; letter-spacing: 1px; color: var(--primary); }
+        .nav-links { display: flex; list-style: none; gap: 3rem; }
+        .nav-links a { text-decoration: none; color: var(--primary-light); font-weight: 500; font-size: 0.9rem; transition: var(--transition-slow); position: relative; }
+        .nav-links a::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0; background-color: var(--accent); transition: var(--transition-slow); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary); }
+
+        .btn { padding: 16px 32px; text-decoration: none; border-radius: 2px; display: inline-flex; align-items: center; justify-content: center; transition: var(--transition-slow); font-weight: 600; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; border: 1px solid transparent; gap: 10px; }
+        .btn-primary { background: var(--accent); color: var(--primary); }
+        .btn-primary:hover { background: #B3966D; transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+        .btn-outline { border-color: rgba(255,255,255,0.3); color: #FFF; background: transparent; backdrop-filter: blur(5px); }
+        .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
+        .btn-whatsapp { background: var(--bg-main); border-color: var(--border-soft); color: var(--primary); width: 100%; }
+        .btn-whatsapp:hover { background: var(--whatsapp); color: #FFF; border-color: var(--whatsapp); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2); }
+
+        .floating-wa { position: fixed; bottom: 30px; right: 30px; background-color: var(--whatsapp); color: white; border-radius: 50px; padding: 14px 28px; display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3); z-index: 900; transition: var(--transition-slow); font-size: 0.9rem; border: none; cursor: pointer; }
+        .floating-wa:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4); }
+
+        .hero { position: relative; padding: 10rem 2rem; min-height: 90vh; display: flex; align-items: center; background-image: linear-gradient(rgba(15, 23, 42, 0.80), rgba(15, 23, 42, 0.65)), url('https://images.unsplash.com/photo-1457089328109-e5d9f4306108?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed; color: #FFF; overflow: hidden; }
+        
+        .floating-raw-seed { position: absolute; width: 500px; height: 500px; top: 50%; left: 70%; transform: translate(-50%, -50%); opacity: 0.15; z-index: 1; pointer-events: none; animation: floatGently 8s ease-in-out infinite; }
+        @keyframes floatGently { 0% { transform: translate(-50%, -50%) rotate(0deg); } 50% { transform: translate(-50%, -55%) rotate(4deg); } 100% { transform: translate(-50%, -50%) rotate(0deg); } }
+        
+        .hero-content { max-width: 800px; position: relative; z-index: 2; }
+        .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: 3px; font-weight: 600; font-size: 0.85rem; display: block; margin-bottom: 1.5rem; }
+        .hero h1 { font-size: 4.8rem; line-height: 1.05; margin-bottom: 2rem; color: #FFF; }
+        .subheadline { font-size: 1.2rem; margin-bottom: 3rem; color: #E2E8F0; max-width: 90%; font-weight: 300; line-height: 1.8; }
+        .hero-btns { display: flex; gap: 1.5rem; margin-bottom: 3rem; }
+        .trust-badges { display: flex; flex-wrap: wrap; gap: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; }
+        .trust-badges span { font-size: 0.85rem; font-weight: 600; color: #E2E8F0; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; }
+        .trust-badges span::before { content: ''; display: block; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+
+        .pilot-dark-section { background-color: var(--primary); background-image: radial-gradient(circle at 50% 50%, var(--primary-light) 0%, var(--primary) 80%); color: #FFF; text-align: center; border-top: 2px solid var(--accent); }
+        .seed-showcase { position: relative; margin: 2rem auto 0; width: 280px; height: 280px; }
+        
+        .bouncing-seed-img { width: 100%; height: 100%; position: relative; z-index: 2; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); animation: seedBounce 3s ease-in-out infinite; }
+        .seed-shadow { position: absolute; bottom: -20px; left: 50%; width: 140px; height: 15px; background: rgba(0, 0, 0, 0.8); border-radius: 50%; filter: blur(8px); animation: shadowPulse 3s ease-in-out infinite; }
+        
+        @keyframes seedBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
+        @keyframes shadowPulse { 0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.8; } 50% { transform: translateX(-50%) scale(0.6); opacity: 0.3; } }
+
+        .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
+        .spec-card { background: var(--bg-card); border: 1px solid var(--border-soft); border-radius: 8px; overflow: hidden; transition: var(--transition-slow); box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; }
+        .spec-card:hover { border-color: var(--accent); box-shadow: var(--shadow-premium); transform: translateY(-5px); }
+        .spec-header { background: var(--primary); padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--accent); }
+        .spec-header.hp-grade { background: var(--primary-light); }
+        .spec-header h3 { color: #FFF; margin: 0; font-size: 1.6rem; font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 0.5px; }
+        .spec-badge { background: rgba(255,255,255,0.1); color: #FFF; font-size: 0.75rem; font-weight: 700; padding: 6px 12px; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; }
+        .spec-badge.premium { background: var(--accent); color: var(--primary); }
+        .spec-body { padding: 2rem; text-align: left; flex-grow: 1; display: flex; flex-direction: column; }
+        .spec-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px dashed var(--border-soft); font-size: 0.95rem; }
+        .spec-row:last-of-type { border-bottom: none; }
+        .spec-label { font-weight: 600; color: var(--primary-light); }
+        .spec-value { color: var(--text-light); text-align: right; max-width: 60%; font-weight: 500; }
+        .spec-features { margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-soft); font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+        .packaging-banner { background: linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius: 8px; padding: 3rem; margin-top: 4rem; color: #FFF; display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-premium); }
+        .packaging-banner h4 { color: var(--accent); font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .packaging-banner p { color: #cbd5e1; margin: 0; max-width: 600px; font-size: 1.05rem; font-weight: 300; text-align: left; }
+
+        .img-container { border-radius: 4px; overflow: hidden; box-shadow: var(--shadow-premium); background: var(--bg-card); position: relative; }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; display: block; transition: var(--transition-slow); }
+        .product-placeholder { width: 100%; height: 320px; margin-bottom: 2rem; box-shadow: none; border-radius: 4px; }
+        .quality-placeholder { width: 100%; height: 550px; }
+        .section-header { text-align: center; margin-bottom: 5rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .section-header h2 { font-size: 3rem; margin-bottom: 1.5rem; }
+        .section-header p { color: var(--text-light); font-size: 1.1rem; font-weight: 300; }
+        .stats-banner { background: var(--primary); color: var(--bg-main); padding: 5rem 0; border-top: 4px solid var(--accent); }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; gap: 2rem; }
+        .stat-item h3 { font-size: 3.5rem; color: var(--bg-main); margin-bottom: 0.5rem; font-weight: 400; }
+        .stat-item p { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 600; }
+        .quality-section { display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: center; }
+        .quality-list { list-style: none; margin-top: 3rem; }
+        .quality-list li { margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border-soft); }
+        .quality-list li:last-child { border-bottom: none; }
+        .quality-list h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.1rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        .quality-list p { color: var(--text-light); font-size: 1rem; font-weight: 300; }
+        .bg-white { background-color: var(--bg-card); }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; }
+        .product-card { background: var(--bg-main); padding: 2.5rem; border-radius: 4px; text-align: center; transition: var(--transition-slow); border: 1px solid transparent; }
+        .product-card:hover { transform: translateY(-8px); background: var(--bg-card); box-shadow: var(--shadow-hover); border-color: var(--border-soft); }
+        .product-card:hover .img-container img { transform: scale(1.05); }
+        .product-card h3 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .product-card p { color: var(--text-light); font-size: 1rem; font-weight: 300; margin-bottom: 2rem; min-height: 80px; }
+        .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; }
+        .review-card { background: var(--bg-main); padding: 3rem; border-radius: 4px; position: relative; transition: var(--transition-slow); }
+        .review-card:hover { background: var(--bg-card); box-shadow: var(--shadow-premium); }
+        .quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 6rem; color: var(--accent); position: absolute; top: -10px; left: 30px; opacity: 0.2; line-height: 1; }
+        .stars { color: var(--accent); margin-bottom: 1.5rem; font-size: 1rem; position: relative; z-index: 2; letter-spacing: 2px; }
+        .review-card p { font-size: 1.1rem; font-weight: 300; margin-bottom: 2rem; color: var(--text-dark); position: relative; z-index: 2; line-height: 1.8; }
+        .reviewer { font-weight: 600; font-size: 0.85rem; color: var(--primary); display: block; text-transform: uppercase; letter-spacing: 1px; }
+        .reviewer-title { font-size: 0.85rem; color: var(--text-light); font-style: italic; margin-top: 4px; display: block; }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; }
+        .blog-card { background: transparent; transition: var(--transition-slow); }
+        .blog-card:hover .blog-img-wrapper img { transform: scale(1.05); }
+        .blog-img-wrapper { overflow: hidden; border-radius: 4px; margin-bottom: 1.5rem; height: 240px; box-shadow: var(--shadow-premium); }
+        .blog-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition-slow); }
+        .blog-date { font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 1rem; display: block; }
+        .blog-card h3 { font-size: 1.6rem; margin-bottom: 1rem; line-height: 1.3; }
+        .blog-card p { color: var(--text-light); font-size: 1rem; font-weight: 300; margin-bottom: 1.5rem; }
+        .read-more { color: var(--primary); font-weight: 600; text-decoration: none; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; display: inline-flex; align-items: center; gap: 5px; transition: var(--transition-slow); }
+        .read-more:hover { gap: 10px; color: var(--accent); }
+        .footer { background: var(--primary); color: var(--bg-main); padding: 6rem 0 2rem; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 5rem; margin-bottom: 5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5rem; }
+        .footer-brand h3 { margin-bottom: 1.5rem; color: var(--bg-main); font-size: 2rem; }
+        .footer-brand p { color: #94A3B8; max-width: 350px; font-weight: 300; }
+        .footer-links h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; margin-bottom: 2rem; font-size: 0.85rem; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 1rem; }
+        .footer-links a { text-decoration: none; color: #94A3B8; transition: var(--transition-slow); font-weight: 300; }
+        .footer-links a:hover { color: var(--bg-main); padding-left: 5px; }
+        .footer-bottom { text-align: center; color: #64748B; font-size: 0.85rem; font-weight: 300; }
+
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(8px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal-box { background: var(--bg-card); width: 90%; max-width: 480px; border-radius: 8px; padding: 3rem 2.5rem; position: relative; transform: translateY(20px); transition: transform 0.3s ease; box-shadow: 0 25px 50px rgba(0,0,0,0.2); }
+        .modal-overlay.active .modal-box { transform: translateY(0); }
+        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: var(--text-light); border: none; background: none; }
+        .close-modal:hover { color: var(--primary); }
+        .form-group { margin-bottom: 1.5rem; text-align: left; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary); font-size: 0.9rem; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .form-control { width: 100%; padding: 14px 16px; border: 1px solid var(--border-soft); border-radius: 4px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; transition: all 0.3s; background: var(--bg-main); color: var(--text-dark); }
+        .form-control:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.1); background: #fff; }
+
+        @media (max-width: 992px) {
+            .hero { padding: 8rem 2rem 4rem; text-align: center; }
+            .hero-content { margin: 0 auto; }
+            .hero h1 { font-size: 3.5rem; }
+            .subheadline { margin: 0 auto 3rem; }
+            .hero-btns, .trust-badges { justify-content: center; }
+            .quality-section { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 4rem; }
+            .footer-grid { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+            .footer-brand p { margin: 0 auto; }
+            .floating-wa { bottom: 20px; right: 20px; padding: 12px 20px; }
+            .floating-wa span { display: none; }
+            .packaging-banner { flex-direction: column; text-align: center; gap: 2rem; }
+            .packaging-banner p { text-align: center; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; width: 100%; position: absolute; top: 100%; left: 0; background: rgba(250, 250, 250, 0.98); flex-direction: column; padding: 2rem 0; text-align: center; box-shadow: var(--shadow-premium); backdrop-filter: blur(10px); }
+            .nav-links.active { display: flex; }
+            .header-actions .btn { display: none; }
+            .mobile-toggle { display: block; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero-btns { flex-direction: column; width: 100%; }
+            .stats-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .modal-box { padding: 2.5rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="announcement-bar">
+        Global B2B Exporters • Specializing in USA & European Markets • ISO & FDA Compliant
+    </div>
+
+    <header class="main-header">
+        <nav class="container nav-container">
+            <div class="logo">
+                <a href="#">Sutra.</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#quality">Quality Assurance</a></li>
+                <li><a href="#grades">Raw Specifications</a></li>
+                <li><a href="#products">Value Catalog</a></li>
+                <li><a href="#blog">Journal</a></li>
+            </ul>
+            <div class="header-actions">
+                <button class="btn btn-primary open-modal-btn">Request Quote</button>
+                <button class="mobile-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <svg class="floating-raw-seed" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="90" fill="#1E293B"/>
+                <circle cx="80" cy="80" r="40" fill="#334155" filter="blur(8px)"/>
+                <path d="M 100, 10 C 160, 10 190, 50 190, 100 C 190, 160 150, 190 100, 190 C 40, 190 10, 150 10, 100 C 10, 40 50, 10 100, 10 Z" fill="none" stroke="#0F172A" stroke-width="4"/>
+                <path d="M 40, 100 Q 60, 80 80, 120 T 140, 90" stroke="#0F172A" stroke-width="3" fill="none" opacity="0.3"/>
+                <path d="M 60, 150 Q 100, 130 150, 160" stroke="#0F172A" stroke-width="2" fill="none" opacity="0.2"/>
+            </svg>
+
+            <div class="container hero-content fade-in">
+                <span class="eyebrow">Direct from Farmers in India</span>
+                <h1>Premium Wholesale Fox Nuts (Makhana) for Global Markets.</h1>
+                <p class="subheadline">We bypass the middlemen, partnering directly with global importers, distributors, and specialty retailers to export the finest graded Lotus Seeds to the USA, Germany, UK, and beyond.</p>
+                <div class="hero-btns">
+                    <a href="#grades" class="btn btn-primary">View Raw Specifications</a>
+                    <button class="btn btn-outline open-modal-btn">Request Trade Samples</button>
+                </div>
+                <div class="trust-badges">
+                    <span>FDA Registered Facility</span>
+                    <span>EU Import Compliant</span>
+                    <span>Govt. of India IEC Certified Exporter</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="pilot-dark-section section fade-in">
+            <div class="container">
+                <span class="eyebrow" style="color: var(--accent);">Texas Trade Samples</span>
+                <h2 style="color: #FFF; font-size: 4rem; margin-bottom: 0;">Sutra.</h2>
+                <h3 style="color: var(--accent); font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 1rem; font-style: italic; font-weight: 400;">The Mindful Crunch</h3>
+                <h4 style="color: #FFF; font-size: 1.8rem; margin-bottom: 1.5rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 500;">Premium Popped Water Lily Seeds (Makhana)</h4>
+                <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto 3rem; font-size: 1.1rem; font-weight: 300;">
+                    Precision-roasted in High Oleic Sunflower Oil. Flavored for the American palate. Packaged in a strict "Clean Zone" for maximum freshness upon US arrival.
+                </p>
+                <div class="seed-showcase">
+                    
+                    <svg class="bouncing-seed-img" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 100, 15 C 145, 18 185, 60 180, 110 C 175, 155 140, 185 95, 180 C 45, 175 15, 140 20, 90 C 25, 45 55, 12 100, 15 Z" fill="#FDFBF7" stroke="#E8E0D5" stroke-width="2"/>
+                        <path d="M 45, 80 C 65, 60 85, 80 75, 100 Z" fill="#F4EFE6"/>
+                        <path d="M 135, 120 C 155, 110 145, 140 125, 130 Z" fill="#F4EFE6"/>
+                        <circle cx="120" cy="55" r="7" fill="#8B5A2B" opacity="0.8"/>
+                        <circle cx="122" cy="53" r="4" fill="#5C3A21" opacity="0.9"/>
+                        <circle cx="60" cy="135" r="10" fill="#8B5A2B" opacity="0.7"/>
+                        <circle cx="58" cy="137" r="5" fill="#5C3A21" opacity="0.8"/>
+                        <circle cx="155" cy="95" r="5" fill="#8B5A2B" opacity="0.6"/>
+                    </svg>
+
+                    <div class="seed-shadow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grades" class="section bg-white">
+            <div class="container fade-in">
+                <div class="section-header">
+                    <h2>Raw Makhana Specifications</h2>
+                    <p>Global Standard Grading | Absolute Consistency | Export Ready</p>
+                </div>
+                
+                <div class="spec-grid">
+                    <div class="spec-card">
+                        <div class="spec-header">
+                            <h3>4+ Grade</h3>
+                            <span class="spec-badge">Medium</span>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-row"><span class="spec-label">Diameter</span><span class="spec-value">14 - 16 mm</span></div>
+                            <div class="spec-row"><span class="spec-label">Shape & Color</span><span class="spec-value">Uniform Round, Natural White</span></div>
+                            <div class="spec-row"><span class="spec-label">Moisture</span><span class="spec-value">Low</span></div>
+                            <div class="spec-features"><strong>Ideal For:</strong> Roasting, flavor production, packaged Namkeen, and daily snack manufacturing. Offers an excellent lightweight, crunchy texture.</div>
+                        </div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-header">
+                            <h3>5+ Grade</h3>
+                            <span class="spec-badge">Large</span>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-row"><span class="spec-label">Diameter</span><span class="spec-value">16 - 18 mm</span></div>
+                            <div class="spec-row"><span class="spec-label">Shape & Color</span><span class="spec-value">Extra Uniform, Bold, Premium White</span></div>
+                            <div class="spec-row"><span class="spec-label">Moisture</span><span class="spec-value">Very Low</span></div>
+                            <div class="spec-features"><strong>Ideal For:</strong> Premium roasted snacks and temple/fasting food. Delivers superior popping quality and a highly satisfying crunch.</div>
+                        </div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-header">
+                            <h3>6+ Grade</h3>
+                            <span class="spec-badge">Extra Large</span>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-row"><span class="spec-label">Diameter</span><span class="spec-value">18+ mm</span></div>
+                            <div class="spec-row"><span class="spec-label">Shape & Color</span><span class="spec-value">Uniform Round, Premium White</span></div>
+                            <div class="spec-row"><span class="spec-label">Moisture</span><span class="spec-value">Lowest</span></div>
+                            <div class="spec-features"><strong>Ideal For:</strong> The highest-tier snack manufacturing. Boasts the lowest moisture content and an extra-crunchy, lightweight texture.</div>
+                        </div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-header hp-grade">
+                            <h3>5+ HP Grade</h3>
+                            <span class="spec-badge premium">Hand Picked</span>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-row"><span class="spec-label">Diameter</span><span class="spec-value">16 - 18 mm</span></div>
+                            <div class="spec-row"><span class="spec-label">Quality Protocol</span><span class="spec-value">Meticulously Sorted</span></div>
+                            <div class="spec-row"><span class="spec-label">Finishing</span><span class="spec-value">Export-Grade Natural White</span></div>
+                            <div class="spec-features"><strong>Ideal For:</strong> High-end export markets. These seeds are individually selected to guarantee absolute perfection in shape, texture, and visual appeal.</div>
+                        </div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-header hp-grade">
+                            <h3>6+ HP Grade</h3>
+                            <span class="spec-badge premium">Hand Picked Elite</span>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-row"><span class="spec-label">Diameter</span><span class="spec-value">18 - 20 mm</span></div>
+                            <div class="spec-row"><span class="spec-label">Quality Protocol</span><span class="spec-value">Meticulously Sorted</span></div>
+                            <div class="spec-row"><span class="spec-label">Finishing</span><span class="spec-value">Super Extra Bold, Superior Finish</span></div>
+                            <div class="spec-features"><strong>Ideal For:</strong> Gourmet production. This is the exclusive, absolute largest grade available, offering unmatched popping volume and elite texture.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="packaging-banner">
+                    <div>
+                        <h4>Global Logistics & Packaging</h4>
+                        <p>We supply in 10kg, 15kg, 20kg, and 25kg formats utilizing strong, export-quality outer bags. Custom poly or vacuum-packing requirements can be accommodated upon request to guarantee transit stability.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline open-modal-btn" style="border-color: #FFF; color: #FFF;">Discuss Logistics</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-banner fade-in">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Machine Sorted</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>USA & EU</h3>
+                        <p>Export Markets</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Grades Available</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>0%</h3>
+                        <p>Adulteration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quality" class="section bg-white">
+            <div class="container">
+                <div class="quality-section fade-in">
+                    <div class="quality-image">
+                        <div class="img-container quality-placeholder">
+                            <img src="https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?q=80&w=1200&auto=format&fit=crop" alt="Indian farmers ensuring quality control in the fields">
+                        </div>
+                    </div>
+                    <div class="quality-content">
+                        <h2>Uncompromising Export Quality.</h2>
+                        <p style="color: var(--text-light); margin-bottom: 2rem; font-size: 1.1rem; font-weight: 300;">International wholesale buyers demand absolute consistency. By sourcing direct from the farmers, we control the supply chain entirely—from the ponds of Bihar to your port of destination.</p>
+                        <ul class="quality-list">
+                            <li>
+                                <h4>Precision Grading & Sorting</h4>
+                                <p>Our Fox Nuts undergo a rigorous 5-stage sorting process to ensure uniform size (e.g., 5-sieve, 6-sieve) and zero foreign particles.</p>
+                            </li>
+                            <li>
+                                <h4>Moisture Control Protocols</h4>
+                                <p>Crucial for sea and air freight, our seeds are dried and packed to exact moisture specifications to prevent mold and ensure a long shelf life.</p>
+                            </li>
+                            <li>
+                                <h4>Global Compliance Ready</h4>
+                                <p>Processed in hygienic facilities meeting stringent US FDA and European Union food safety and packaging standards.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <div class="container fade-in">
+                <div class="section-header">
+                    <h2>Value-Added Catalog.</h2>
+                    <p>Available for raw commodity import, bulk ingredient sourcing, and retail-ready private labeling.</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card" style="text-align: center;">
+                        <div class="img-container product-placeholder">
+                            <img src="https://images.unsplash.com/photo-1515543904379-3d757afe72e3?q=80&w=800&auto=format&fit=crop" alt="Raw Bulk Fox Nuts in burlap sacks">
+                        </div>
+                        <h3>Raw Fox Nuts (Phool Makhana)</h3>
+                        <p>Premium, machine-sorted unroasted Lotus Seeds. Ideal for European and US snack manufacturers seeking clean-label ingredients.</p>
+                        <button class="btn btn-whatsapp mt-1 open-modal-btn">Inquire for Raw Bulk</button>
+                    </div>
+                    <div class="product-card" style="text-align: center;">
+                        <div class="img-container product-placeholder">
+                            <img src="https://images.unsplash.com/photo-1615485242250-9382f6e52277?q=80&w=800&auto=format&fit=crop" alt="Roasted and Seasoned Fox Nut Snacks">
+                        </div>
+                        <h3>Roasted & Seasoned</h3>
+                        <p>Pre-roasted in High Oleic oil and seasoned to your market's taste (e.g., Pink Salt, Sriracha). Shipped in bulk moisture-barrier liners.</p>
+                        <button class="btn btn-whatsapp mt-1 open-modal-btn">Inquire for Flavored</button>
+                    </div>
+                    <div class="product-card" style="text-align: center;">
+                        <div class="img-container product-placeholder">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop" alt="Private Label Packaging Mockup">
+                        </div>
+                        <h3>Private Label Packaging</h3>
+                        <p>End-to-end processing and retail packaging. We pack into your custom branded pouches, ready for immediate supermarket distribution.</p>
+                        <button class="btn btn-whatsapp mt-1 open-modal-btn">Discuss Private Label</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section bg-white">
+            <div class="container fade-in">
+                <div class="section-header">
+                    <h2>Trusted by Global Importers.</h2>
+                    <p>Our commitment to consistent sizing, quality, and timely shipping has built long-term partnerships across continents.</p>
+                </div>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <span class="quote-mark">"</span>
+                        <div class="stars">★★★★★</div>
+                        <p>Finding a reliable supplier who understands EU import regulations was tough. Sutra delivers perfectly graded seeds with exceptional moisture control. Highly recommended for European buyers.</p>
+                        <span class="reviewer">Lukas M.</span>
+                        <span class="reviewer-title">Procurement Manager, Munich, Germany</span>
+                    </div>
+                    <div class="review-card">
+                        <span class="quote-mark">"</span>
+                        <div class="stars">★★★★★</div>
+                        <p>We use their raw Fox Nuts for our vegan snack line in the US. By buying direct from farmers, the kernel size is incredibly consistent, which reduces our breakage significantly during commercial roasting.</p>
+                        <span class="reviewer">Sarah J.</span>
+                        <span class="reviewer-title">Co-Founder, Specialty Foods, Texas, USA</span>
+                    </div>
+                    <div class="review-card">
+                        <span class="quote-mark">"</span>
+                        <div class="stars">★★★★★</div>
+                        <p>Their private label service is seamless. They handled the roasting, seasoning, and packaging flawlessly. Shipped directly to our distribution center in pristine condition.</p>
+                        <span class="reviewer">David R.</span>
+                        <span class="reviewer-title">FMCG Distributor, London, UK</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <div class="container fade-in">
+                <div class="section-header">
+                    <h2>Market Insights & Journal.</h2>
+                    <p>Industry resources for importers navigating the global healthy snacking market.</p>
+                </div>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c663c0?q=80&w=800&auto=format&fit=crop" alt="Global Supply Chain and Logistics Container Yard">
+                        </div>
+                        <span class="blog-date">March 2026</span>
+                        <h3>A Buyer's Guide to Fox Nut Grading & Sizing</h3>
+                        <p>Understanding the difference between 4-sieve, 5-sieve, and 6-sieve lotus seeds for retail vs. ingredient use.</p>
+                        <a href="#" class="read-more">Read Insight &rarr;</a>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop" alt="International Trade Logistics Cargo Ship">
+                        </div>
+                        <span class="blog-date">February 2026</span>
+                        <h3>Importing Snacks to the EU & USA</h3>
+                        <p>An overview of FDA Prior Notice, EU food safety compliance, and standard packaging requirements.</p>
+                        <a href="#" class="read-more">Read Insight &rarr;</a>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" alt="Healthy Plant-Based Food Ingredients">
+                        </div>
+                        <span class="blog-date">January 2026</span>
+                        <h3>Why Plant-Based Brands are Shifting to Fox Nuts</h3>
+                        <p>Analyzing the explosive growth of Lotus Seeds in Western markets as a low-calorie alternative to popcorn.</p>
+                        <a href="#" class="read-more">Read Insight &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Sutra.</h3>
+                    <p>Global Fox Nut Exporters. Reliable sourcing directly from farmers in India to the world.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#quality">Quality Assurance</a></li>
+                        <li><a href="#grades">Raw Specifications</a></li>
+                        <li><a href="#products">Bulk Catalog</a></li>
+                        <li><a href="#testimonials">Client Trust</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Direct Contact</h4>
+                    <ul>
+                        <li>WhatsApp: +91 92414 80897</li>
+                        <li>Email: export@sutraexports.com</li>
+                        <li>Headquarters: Plot No. 148, Darogapara Athhle Chowk, Raigarh, Chhattisgarh 496001</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sutra Exports. All Rights Reserved. FDA Food Facility Registered | FSSAI Central Lic: 10526999000011 | Govt. of India Recognized Exporter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="floating-wa open-modal-btn" aria-label="Global Inquiries">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+        <span>Global Inquiries</span>
+    </button>
+
+    <div class="modal-overlay" id="enquiryModal">
+        <div class="modal-box">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem; color: var(--primary); font-family: 'Cormorant Garamond', serif;">Request a Quote</h3>
+            <p style="color: var(--text-light); margin-bottom: 2rem; font-size: 0.95rem;">Tell us what you need, and we'll connect instantly via WhatsApp.</p>
+            
+            <form id="enquiryForm">
+                <div class="form-group">
+                    <label for="eqName">Name (Optional)</label>
+                    <input type="text" id="eqName" class="form-control" placeholder="E.g., John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="eqEmail">Email (Optional)</label>
+                    <input type="email" id="eqEmail" class="form-control" placeholder="john@company.com">
+                </div>
+                <div class="form-group">
+                    <label for="eqPhone">Phone Number (Optional)</label>
+                    <input type="tel" id="eqPhone" class="form-control" placeholder="+1 234 567 8900">
+                </div>
+                <div class="form-group">
+                    <label for="eqVolume">Expected Order Volume (Optional)</label>
+                    <select id="eqVolume" class="form-control">
+                        <option value="">Select volume...</option>
+                        <option value="Trade Sample Request (< 50kg)">Trade Sample Request (< 50kg)</option>
+                        <option value="Small Bulk (50kg - 500kg)">Small Bulk (50kg - 500kg)</option>
+                        <option value="LCL / FCL Container (500kg+)">LCL / FCL Container (500kg+)</option>
+                        <option value="Private Label Inquiry">Private Label Inquiry</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; display: flex; justify-content: center; gap: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                    Send to WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Scroll Animation Observer
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+            // Mobile Menu
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const menu = document.querySelector('.nav-links');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) menu.classList.remove('active');
+                });
+            });
+
+            // Modal Logic
+            const modal = document.getElementById('enquiryModal');
+            const closeBtn = document.getElementById('closeModal');
+            const openBtns = document.querySelectorAll('.open-modal-btn');
+            
+            openBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    modal.classList.add('active');
+                });
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                modal.classList.remove('active');
+            });
+            
+            modal.addEventListener('click', (e) => {
+                if(e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+            
+            // Form Submission to WhatsApp
+            document.getElementById('enquiryForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('eqName').value || 'Not provided';
+                const email = document.getElementById('eqEmail').value || 'Not provided';
+                const phone = document.getElementById('eqPhone').value || 'Not provided';
+                const volume = document.getElementById('eqVolume').value || 'Not specified';
+                
+                // Construct the pre-filled message
+                const message = `Hello Sutra! I am requesting a quote/information.%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Expected Volume:* ${volume}`;
+                
+                // Redirect to WhatsApp web/app
+                window.open(`https://wa.me/919241480897?text=${message}`, '_blank');
+                
+                // Close modal after sending
+                modal.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
